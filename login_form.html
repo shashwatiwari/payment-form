@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup Login Form</title>
+    <link rel="stylesheet" type="text/css" href="login_form.css">
+</head>
+
+<body onload="showPopup()">
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <h1>Welcome to my website!</h1>
+        <p>This is some example content for my website.</p>
+    </div>
+    <script src="login_form.js"></script>
+</body>
+
+</html>
