@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Payment Form</title>
     <link rel="stylesheet" href="payFormstyle.css">
 </head>
 
 <body>
+    <div id="preloader">
+        <img src="load_img.png" alt="Loading..." class="image-rotation">
+    </div>
+    <!-- <div id="preloader"> -->
+    <!-- <div class="spinner-border text-primary image-rotation" role="status">
+            <span class="sr-only">Loading..</Loading></span>
+        </div> -->
+    <!-- <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden"><img src="load_img.png" alt=""></span>
+        </div> -->
+    <!-- </div> -->
     <div class="container">
         <form action="">
             <h1 class="main_heading">Payment Form</h1>
@@ -43,6 +55,18 @@
             <input type="submit" value="Paynow">
         </form>
     </div>
+
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                loader.style.display = 'none';
+                container.style.display = 'block';
+
+            }, 1500);
+
+        })
+    </script>
 </body>
 
 </html>

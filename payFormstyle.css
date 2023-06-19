@@ -1,3 +1,28 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    /* width: 100%;
+    height: 100%; */
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.2rem;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -58,4 +83,30 @@ input[type="submit"]:hover {
     font: darkgrey;
 
 
+}
+
+.image-rotation {
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    animation: spin 1s infinite linear;
+}
+
+#preloader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
